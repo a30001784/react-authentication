@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/todos": {
+      "name": "/todos",
+      "lambdaFunction": "todosfunction1",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

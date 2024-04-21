@@ -1,0 +1,107 @@
+{
+  "api": {
+    "todosapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "todosfunction1"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "reactauthenticationb5e59b12": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "todosfunction": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "reactauthenticationb5e59b12"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "todosfunction1": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_todosfunction1_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "todosfunction1"
+        }
+      ]
+    },
+    "AMPLIFY_function_todosfunction1_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "todosfunction1"
+        }
+      ]
+    },
+    "AMPLIFY_function_todosfunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "todosfunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_todosfunction_env": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "todosfunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_todosfunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "todosfunction"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "auth": {
+      "reactauthenticationb5e59b12": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "env",
+      "environmentVariableName": "Env"
+    }
+  ]
+}

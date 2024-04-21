@@ -1,0 +1,34 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactauthentication-dev-269d5-authRole",
+      "UnauthRoleArn": "arn:aws:iam::702697345174:role/amplify-reactauthentication-dev-269d5-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::702697345174:role/amplify-reactauthentication-dev-269d5-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-reactauthentication-dev-269d5-deployment",
+      "UnauthRoleName": "amplify-reactauthentication-dev-269d5-unauthRole",
+      "StackName": "amplify-reactauthentication-dev-269d5",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:702697345174:stack/amplify-reactauthentication-dev-269d5/23537a60-fbe5-11ee-8a11-068668df73dd",
+      "AmplifyAppId": "d2pto17lau42bl"
+    },
+    "categories": {
+      "auth": {
+        "reactauthenticationb5e59b12": {}
+      },
+      "function": {
+        "todosfunction": {
+          "env": "dev",
+          "deploymentBucketName": "amplify-reactauthentication-dev-269d5-deployment",
+          "s3Key": "amplify-builds/todosfunction-5365755749524a335831-build.zip"
+        },
+        "todosfunction1": {
+          "deploymentBucketName": "amplify-reactauthentication-dev-269d5-deployment",
+          "s3Key": "amplify-builds/todosfunction1-73716849423254586c6f-build.zip"
+        }
+      },
+      "api": {
+        "todosapi": {}
+      }
+    }
+  }
+}
