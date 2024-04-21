@@ -28,6 +28,12 @@
       },
       "api": {
         "todosapi": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2pto17lau42bl",
+          "type": "cicd"
+        }
       }
     }
   }
